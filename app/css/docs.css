@@ -1,0 +1,75 @@
+.bd-sidebar .bd__items {
+    padding-left: 16px;
+}
+.bd-sidebar .bd__items .bd__item>a {
+    color: #EA4335!important;
+}
+
+
+.bd-sidebar .bd__items .bd__item li {
+    list-style-type: none; /* Убираем маркеры у списка */
+    border: 1px solid #5F6368;
+    border-width: 0 0 0 1px;
+    padding: 0 0 0 6px;
+}
+.bd-sidebar .bd__items .bd__item ul {
+    padding: 3px 11px;
+}
+.bd-sidebar .bd__items .bd__item li.active,
+.bd-sidebar .bd__items .bd__item li:hover{
+    border: 1px solid #EA4335;
+    border-width: 0 0 0 1px;
+}
+/*.bd-sidebar .bd__items .bd__item li:hover {
+    border: 1px solid #EA4335;
+    border-width: 0 0 0 1px;
+}*/
+.bd-sidebar .bd__items .bd__item li a{
+    color:#5F6368;
+}
+
+.bd-sidebar .bd__items .bd__item li.active a,
+.bd-sidebar .bd__items .bd__item li:hover a{
+    color:#232425;
+}
+.title {
+    font-size: 1.5625rem;
+    text-align: left;
+    font-weight: 400;
+    color: #3C4043;
+    margin-bottom: 0;
+}
+.desc {
+    text-align: center;
+    color: #5f6368;
+    text-align: left;
+    font-size: 0.8em;
+    margin: 8px 0 15px;
+}
+
+.block_docs{
+    border: 1px solid #cacaca;
+    padding: 22px;
+    display: flow-root;
+    margin-bottom: 31px;
+}
+.block_docs .title{
+    padding: 5px 0 11px;
+    color: #5a5c5d;
+}
+.title_name{
+    color: #1A73E9;
+}
+.doc_block_list {
+    float: left;
+    padding: 11px 0;
+}
+.doc_block_list .formula{
+    padding: 0 10px;
+}
+.doc_list{
+    padding: 0px;
+}
+.block_docs_2{
+    background: #f9f9f9;
+}

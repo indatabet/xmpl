@@ -1,0 +1,72 @@
+// USER VARIABLES SECTION
+
+@accent: #1A73E9; // Accent Color
+@accent-2: #093a7a; // Accent Color
+@fontsize: 16px; // Body Font Size
+@textcolor: #5F6368; // Text Color
+@titlecolor: #232528; // title color
+@redcolor: #EA4335;
+@greencolor: #31A767;
+@system: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
+@roboto: Roboto, sans-serif; // Roboto Font Family
+
+// IMPORT SECTION
+
+@import '/node_modules/bootstrap/dist/css/bootstrap-reboot.min.css'; // Bootstrap Reboot collection
+@import '/node_modules/bootstrap/dist/css/bootstrap-grid.min.css'; // Optional Bootstrap Grid
+@import '/node_modules/owl.carousel/dist/assets/owl.carousel.min.css'; // owl carousel
+@import '/node_modules/owl.carousel/dist/assets/owl.theme.default.min.css'; // owl carousel theme
+@import '/node_modules/hc-offcanvas-nav/dist/hc-offcanvas-nav.css'; // hc menu
+@import '/node_modules/smartmenus/dist/css/sm-core-css.css';
+@import '/node_modules/smartmenus/dist/css/sm-simple/sm-simple.css';
+
+// FONTS LOAD SECTION
+
+.font(@fname, @fstyle, @fweight, @furl) {
+	@font-face {
+		font-family: @fname;
+		font-style: @fstyle;
+		font-weight: @fweight;
+		// font-display: swap; // Uncomment to initially display system fonts
+		src: local(@fname), url(@furl) format('woff2');
+	}
+}
+
+.font('Roboto', normal, 400, '../fonts/roboto-regular-webfont.woff2');
+.font('Roboto', italic, 400, '../fonts/roboto-italic-webfont.woff2');
+.font('Roboto', normal, 700, '../fonts/roboto-bold-webfont.woff2');
+.font('Roboto', italic, 700, '../fonts/roboto-bolditalic-webfont.woff2');
+
+// GENERAL DOCUMENT STYLES
+
+::placeholder {
+	color: #666;
+}
+
+::selection {
+	background-color: @accent;
+	color: #fff;
+}
+
+input, textarea {
+	outline: none;
+	&:focus:required:invalid { border-color: red }
+	&:required:valid { border-color: green }
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	font-family: @roboto;
+	font-size: @fontsize;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	overflow-x: hidden;
+	color: @textcolor;
+}
+html {
+	overflow-x: hidden;
+	height: 100%;
+}
